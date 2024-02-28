@@ -39,24 +39,12 @@ final class ContactList {
         
         return contactList
     }
-   /* private func getRandomElement(from array: [String]) -> String {
-        let value = array.randomElement() ?? ""
-        if let index = array.firstIndex(of: value) {
-            array.remove(at: index)
-        }
-    }*/
 }
   
-final class Person {
+struct Person {
     var name: String
     var surname: String
     var phoneNumber: String
     var email: String
-    
-    init(name: String, surname: String, phoneNumber: String, email: String) {
-        self.name = name
-        self.surname = surname
-        self.phoneNumber = phoneNumber
-        self.email = email
-    }
 }
+
