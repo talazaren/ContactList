@@ -4,6 +4,7 @@
 //
 //  Created by Tatiana Lazarenko on 2/27/24.
 //
+import Foundation
 
 struct Person {
     let name: String

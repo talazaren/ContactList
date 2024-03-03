@@ -44,7 +44,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle.fill" catalog="system" id="ph1-5G-vh8"/>
-                    <navigationItem key="navigationItem" title="Persons List" id="est-eh-jZm">
+                    <navigationItem key="navigationItem" title="Persons List" largeTitleDisplayMode="always" id="est-eh-jZm">
                         <barButtonItem key="backBarButtonItem" title="Back" id="17A-J5-yQF"/>
                     </navigationItem>
                 </tableViewController>
@@ -52,11 +52,11 @@
             </objects>
             <point key="canvasLocation" x="-766" y="-65"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Persons List-->
         <scene sceneID="bFT-t3-aZE">
             <objects>
-                <tabBarController id="Vuy-ZZ-fRb" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="3qy-xW-enq"/>
+                <tabBarController id="Vuy-ZZ-fRb" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Persons List" id="3qy-xW-enq"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L8C-nD-L09">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="59h-Ll-Rx7" style="IBUITableViewCellStyleDefault" id="Xcc-zV-ceR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="59h-Ll-Rx7" style="IBUITableViewCellStyleDefault" id="Xcc-zV-ceR">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xcc-zV-ceR" id="DsG-Jg-Ir1">
@@ -104,7 +104,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle.fill" catalog="system" id="KO0-E6-WXi"/>
-                    <navigationItem key="navigationItem" title="Persons List" id="aTu-DW-rGI"/>
+                    <navigationItem key="navigationItem" title="Persons List" largeTitleDisplayMode="always" id="aTu-DW-rGI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQk-NE-r7u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
