@@ -17,6 +17,8 @@
 		1A991A572B8E15C9002874FA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A991A562B8E15C9002874FA /* Person.swift */; };
 		1A991A5A2B8E161D002874FA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A991A592B8E161D002874FA /* DataStore.swift */; };
 		1AB77FED2B8F75AD006C28B3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1AB77FEC2B8F75AD006C28B3 /* .gitignore */; };
+		1AB77FF72B948E3B006C28B3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB77FF62B948E3B006C28B3 /* TabBarViewController.swift */; };
+		1AB77FF92B949109006C28B3 /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB77FF82B949109006C28B3 /* SectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1A991A562B8E15C9002874FA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1A991A592B8E161D002874FA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		1AB77FEC2B8F75AD006C28B3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1AB77FF62B948E3B006C28B3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1AB77FF82B949109006C28B3 /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			children = (
 				1A991A412B8E10EE002874FA /* PersonDetailsViewController.swift */,
 				1A991A542B8E134C002874FA /* ContactListViewController.swift */,
+				1AB77FF62B948E3B006C28B3 /* TabBarViewController.swift */,
+				1AB77FF82B949109006C28B3 /* SectionTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,7 +201,9 @@
 				1A991A5A2B8E161D002874FA /* DataStore.swift in Sources */,
 				1A991A422B8E10EE002874FA /* PersonDetailsViewController.swift in Sources */,
 				1A991A552B8E134C002874FA /* ContactListViewController.swift in Sources */,
+				1AB77FF72B948E3B006C28B3 /* TabBarViewController.swift in Sources */,
 				1A991A3E2B8E10EE002874FA /* AppDelegate.swift in Sources */,
+				1AB77FF92B949109006C28B3 /* SectionTableViewController.swift in Sources */,
 				1A991A402B8E10EE002874FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
