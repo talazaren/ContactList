@@ -6,8 +6,27 @@
 //
 
 final class DataStore {
-    let names = ["John", "Elena", "Sam", "Ann", "Clare", "Tim", "Alex", "Julia"]
-    let surnames = ["Smith", "Stone", "Cook", "Black", "Kim", "Musk", "Folks", "Hanks"]
+    let names = [
+        "John",
+        "Elena",
+        "Sam",
+        "Ann",
+        "Clare",
+        "Tim",
+        "Alex",
+        "Julia"
+    ]
+    
+    let surnames = [
+        "Smith",
+        "Stone",
+        "Cook",
+        "Black",
+        "Kim",
+        "Musk",
+        "Folks",
+        "Hanks"
+    ]
     
     let telephones = [
         "385847",
@@ -19,6 +38,7 @@ final class DataStore {
         "249320",
         "532910"
     ]
+    
     let emails = [
         "kkk@mail.ru",
         "aaa@mail.ru",
