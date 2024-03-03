@@ -9,7 +9,7 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
-    private var contactList = ContactList().getContactList(from: Persons())
+    private var contactList = ContactList().getContactList(from: DataStore())
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

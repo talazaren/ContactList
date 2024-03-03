@@ -5,46 +5,44 @@
 //  Created by Tatiana Lazarenko on 2/27/24.
 //
 
-final class ContactList {
-    var contactList: [Person] = []
+struct Person {
+    let name: String
+    let surname: String
+    let phoneNumber: String
+    let email: String
     
-    func getContactList(from persons: Persons) -> [Person] {
-        persons.names.shuffle()
+    var fullname: String {
+        "\(name) \(surname)"
+    }
+    
+    static func getContactList() -> [Person] {
+        var persons: [Person] = []
+        let dataStore = DataStore()
         
-        for name in persons.names {
-            let surname = persons.surnames.randomElement() ?? ""
-            if let surnameIndex = persons.surnames.firstIndex(of: surname) {
-                persons.surnames.remove(at: surnameIndex)
-            }
-            
-            let phoneNumber = persons.telephones.randomElement() ?? ""
-            if let phoneIndex = persons.telephones.firstIndex(of: phoneNumber) {
-                persons.telephones.remove(at: phoneIndex)
-            }
-            
-            let email = persons.emails.randomElement() ?? ""
-            if let emailIndex = persons.emails.firstIndex(of: email) {
-                persons.emails.remove(at: emailIndex)
-            }
-            
+        let names = dataStore.names.shuffled()
+        let surnames = dataStore.surnames.shuffled()
+        let telephones = dataStore.telephones.shuffled()
+        let emails = dataStore.emails.shuffled()
+        
+        let count = min(
+            names.count,
+            surnames.count,
+            telephones.count,
+            emails.count
+        )
+        
+        for index in 0..<count {
             let person = Person(
-                name: name,
-                surname: surname,
-                phoneNumber: phoneNumber,
-                email: email
+                name: names[index],
+                surname: surnames[index],
+                phoneNumber: telephones[index],
+                email: emails[index]
             )
             
-            contactList.append(person)
+            persons.append(person)
         }
         
-        return contactList
+        return persons
     }
-}
-  
-struct Person {
-    var name: String
-    var surname: String
-    var phoneNumber: String
-    var email: String
 }
 

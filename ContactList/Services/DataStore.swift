@@ -5,11 +5,11 @@
 //  Created by Tatiana Lazarenko on 2/27/24.
 //
 
-final class Persons {
-    var names = ["John", "Elena", "Sam", "Ann", "Clare", "Tim", "Alex", "Julia"]
-    var surnames = ["Smith", "Stone", "Cook", "Black", "Kim", "Musk", "Folks", "Hanks"]
+final class DataStore {
+    let names = ["John", "Elena", "Sam", "Ann", "Clare", "Tim", "Alex", "Julia"]
+    let surnames = ["Smith", "Stone", "Cook", "Black", "Kim", "Musk", "Folks", "Hanks"]
     
-    var telephones = [
+    let telephones = [
         "385847",
         "920954",
         "029485",
@@ -19,7 +19,7 @@ final class Persons {
         "249320",
         "532910"
     ]
-    var emails = [
+    let emails = [
         "kkk@mail.ru",
         "aaa@mail.ru",
         "iii@mail.ru",
